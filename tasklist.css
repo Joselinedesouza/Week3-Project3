@@ -1,23 +1,13 @@
 body {
-    margin-top: 100px;
-    height: 100px;
-    padding-left: 100px;
-    width: 500px;
-    background-color: rgb(230, 176, 203);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-header {
-display:inline-block;
- background-color: rgb(252, 240, 255);
- padding: 50px 50px 50px 50px;
- text-align: center;
- border-radius: 20px;
- width: 500px;
- 
- }
- 
- main {
-    display: inline-block;
     background-color: rgb(252, 240, 255);
   
     margin-top: 40px;
@@ -27,45 +17,60 @@ display:inline-block;
     padding-right: 50px;
     border-radius: 20px;
 
+  color: #fff;
 }
-  ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
 
- }
- ul li {
+
+#Esercizi {
+  display: flex;
+  gap: 10px;
+}
+#nuovo-esercizio {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#Aggiungi {
+  background: #6d6d6d;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#esercizio-nuovo{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+
+  .task {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
     cursor: pointer;
-    padding-top: 30px;
-     font-size: 25px;
-    transition: 0.2s; 
- }
- ul li.check{
-    width: 7px;
+}
  
- }
+.task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
  
- input {
-    margin: 0;
+.deleteButton {
+    background: rgb(255, 0, 157);
+    color: white;
     border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
- }
-.addButton {
-    padding: 10px;
-    width: 15%;
-    background: #b8afaf;
-    color: #272626;
-    float: left;
-    text-align: center;
-    font-size: 16px;
+    padding: 5px 10px;
     cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-  }
- 
+    border-radius: 5px;
+}
 
 

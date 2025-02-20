@@ -7,27 +7,24 @@
     <link rel="stylesheet" href="tasklist.css" />
   </head>
   <body>
-    <header>
-        <div id="myDIV" class="header">
-            <h2>My task list</h2>
-      <input id="myImput1" type="text" />
-      <span oneclick="newElement()" class="addButton">add</span>
-        </div>
-    </header>
-    <main>
+    <div id="container">
+      <h1>Scheda Gambe</h1>
+      <div id="Esercizi">
+        <!--scheda input testo-->
+        <input
+          type="text"
+          id="nuovo-esercizio"
+          placeholder="Aggiungi nuovo esercizio..."
+        />
+        <button id="Aggiungi">Aggiungi</button>
+      </div>
+      <!--tutti gli esrecizi da fare-->
       <div>
-        <ul id="MyUL">
-          <li class="check">Portare fuori il cane</li>
-          <li>Pulire casa</li>
-          <li>Fare la spesa</li>
-          <li>Lavare la macchina</li>
-          <li>Stirare i vestiti</li>
-          <li>Ripassare esercizi</li>
+        <ul id="esercizio-nuovo">
+          <!--In javascript aggiungeremo gli erecizi che metteremo in input-->
         </ul>
       </div>
-    </main>
-</form>
-    <footer></footer>
+    </div>
     <script src="javascript.js"></script>
   </body>
 </html>
